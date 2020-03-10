@@ -105,7 +105,7 @@ export default {
 </script>
 <style lang="less">
 header {
-  position: relative;
+  position: fixed;
   background-color: black;
   height: 100vh;
   min-height: 25rem;
@@ -116,7 +116,7 @@ header {
 }
 
 header video {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -131,7 +131,7 @@ header video {
 }
 
 header .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -147,7 +147,7 @@ nav {
 
 .cover {
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 9;
   color: white;

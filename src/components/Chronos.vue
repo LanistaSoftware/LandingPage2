@@ -1,20 +1,28 @@
 <template>
   <div class="chrono-container">
-    <div class="round">
-      <p>{{ chronos.days }}</p>
-      <p class="day">Gün</p>
+    <div class="chronocapsul">
+      <span class="round">
+        <p>{{ chronos.days }}</p>
+        <p class="day">Gün</p>
+      </span>
     </div>
-    <div class="round">
-      <p>{{ chronos.hours }}</p>
-      <p class="hour">Saat</p>
+    <div class="chronocapsul">
+      <span class="round">
+        <p>{{ chronos.hours }}</p>
+        <p class="hour">Saat</p>
+      </span>
     </div>
-    <div class="round">
-      <p>{{ chronos.minutes }}</p>
-      <p class="minute">Dakika</p>
+    <div class="chronocapsul">
+      <span class="round">
+        <p>{{ chronos.minutes }}</p>
+        <p class="minute">Dakika</p>
+      </span>
     </div>
-    <div class="round">
-      <p>{{ chronos.seconds }}</p>
-      <p class="sec">Saniye</p>
+    <div class="chronocapsul">
+      <span class="round">
+        <p>{{ chronos.seconds }}</p>
+        <p class="sec">Saniye</p>
+      </span>
     </div>
   </div>
 </template>
@@ -62,16 +70,21 @@ export default {
 </script>
 <style lang="less" scoped>
 .chrono-container {
-  display: flex;
   width: 100%;
+  float: left;
   text-align: center;
   vertical-align: middle;
 }
+.chronocapsul {
+  width: 25%;
+  float: left;
+}
 .round {
+  display: block;
   margin: 1rem;
   width: 6rem;
   height: 6rem;
-  border: 4px dotted coral;
+  border: 0.4rem dotted coral;
   border-radius: 100%;
   text-align: center;
 

@@ -43,8 +43,12 @@
         </b-form-input>
       </b-form-group>
       <b-container class="text-right">
-        <b-button type="submit" class="btns m-2">Submit</b-button>
-        <b-button type="reset" class="btnr m-2">Reset</b-button>
+        <b-button type="submit" variant="outline-warning" class="btns m-2"
+          >Submit</b-button
+        >
+        <b-button type="reset" variant="outline-warning" class="btnr m-2"
+          >Reset</b-button
+        >
       </b-container>
     </b-form>
   </div>
@@ -106,5 +110,10 @@ input {
 }
 .btnr {
   color: coral;
+}
+.btn:hover,
+.btn:active,
+.btn:visited {
+  background-color: black;
 }
 </style>
