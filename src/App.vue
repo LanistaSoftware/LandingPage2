@@ -188,12 +188,12 @@ h4 {
 }
 
 .social {
-  width: 70px;
-  height: 70px;
-  border: 1.5px solid white;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.1rem solid white;
   border-radius: 100%;
   vertical-align: middle;
-  margin: 3px;
+  margin: 0.2rem;
 }
 
 .social:hover {
@@ -207,13 +207,13 @@ ul {
 
 li {
   float: left;
-  padding: 2px;
+  padding: 0.1rem;
 }
 
 i {
-  font-size: 30px;
+  font-size: 1.8rem;
   color: #ffc107;
-  padding: 30% 0;
+  padding: 25% 0;
 }
 
 i:hover {

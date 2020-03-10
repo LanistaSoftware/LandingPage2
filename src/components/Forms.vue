@@ -42,9 +42,10 @@
         >
         </b-form-input>
       </b-form-group>
-
-      <b-button type="submit" variant="primary">Submit</b-button>
-      <b-button type="reset" variant="danger">Reset</b-button>
+      <b-container class="text-right">
+        <b-button type="submit" class="btns m-2">Submit</b-button>
+        <b-button type="reset" class="btnr m-2">Reset</b-button>
+      </b-container>
     </b-form>
   </div>
 </template>
@@ -94,5 +95,16 @@ export default {
 input {
   background-color: transparent !important;
   color: #ffc107 !important;
+}
+.btnr,
+.btns {
+  background-color: transparent;
+  border-color: white;
+}
+.btns {
+  color: #ffc107;
+}
+.btnr {
+  color: coral;
 }
 </style>

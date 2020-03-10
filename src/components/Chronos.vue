@@ -2,15 +2,19 @@
   <div class="chrono-container">
     <div class="round">
       <p>{{ chronos.days }}</p>
+      <p class="day">Gün</p>
     </div>
     <div class="round">
       <p>{{ chronos.hours }}</p>
+      <p class="hour">Saat</p>
     </div>
     <div class="round">
       <p>{{ chronos.minutes }}</p>
+      <p class="minute">Dakika</p>
     </div>
     <div class="round">
       <p>{{ chronos.seconds }}</p>
+      <p class="sec">Saniye</p>
     </div>
   </div>
 </template>
@@ -57,8 +61,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.chrono-container
-{
+.chrono-container {
   display: flex;
   width: 100%;
   text-align: center;
